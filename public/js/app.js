@@ -150,6 +150,38 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
@@ -796,9 +828,76 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("h1", { staticClass: "main-title" }, [_vm._v("Full logo")])
+  return _vm._m(0)
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c("h1", { staticClass: "main-title mb-8" }, [_vm._v("Full logo")]),
+      _vm._v(" "),
+      _c("div", [
+        _c(
+          "picture",
+          {
+            staticClass:
+              "block shadow-md rounded-lg flex items-center justify-center mb-6",
+            staticStyle: { height: "382px" }
+          },
+          [
+            _c("img", {
+              attrs: { src: "/img/logo.svg", alt: "laracasts logo" }
+            })
+          ]
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "flex justify-between items-center" }, [
+        _c("p", [
+          _vm._v("\n            Original Logo on "),
+          _c("strong", [_vm._v("white")]),
+          _vm._v(" background\n        ")
+        ]),
+        _vm._v(" "),
+        _c("a", { staticClass: "button", attrs: { href: "/img/logo.svg" } }, [
+          _vm._v("logo.svg")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", [
+        _c(
+          "picture",
+          {
+            staticClass:
+              "block shadow-md rounded-lg flex items-center justify-center mb-6 bg-blue-500",
+            staticStyle: { height: "382px" }
+          },
+          [
+            _c("img", {
+              attrs: { src: "/img/negative-logo.svg", alt: "laracasts logo" }
+            })
+          ]
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "flex justify-between items-center" }, [
+        _c("p", [
+          _vm._v("\n            Negative Logo on "),
+          _c("strong", [_vm._v("blue ")]),
+          _vm._v(" background\n        ")
+        ]),
+        _vm._v(" "),
+        _c(
+          "a",
+          { staticClass: "button", attrs: { href: "/img/negative-logo.svg" } },
+          [_vm._v("negative-logo.svg")]
+        )
+      ])
+    ])
+  }
+]
 render._withStripped = true
 
 
@@ -16806,7 +16905,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _pages_Illustrations__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./pages/Illustrations */ "./resources/js/pages/Illustrations.vue");
 /* harmony import */ var _pages_Loaders__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./pages/Loaders */ "./resources/js/pages/Loaders.vue");
 /* harmony import */ var _pages_Wallpapers__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./pages/Wallpapers */ "./resources/js/pages/Wallpapers.vue");
-/* harmony import */ var _pages_NotFound__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./pages/NotFound */ "./resources/js/pages/NotFound.vue");
+/* harmony import */ var _pages_NotFound__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./pages/NotFound */ "./resources/js/pages/NotFound.vue");
 
 
 
@@ -16822,7 +16921,7 @@ __webpack_require__.r(__webpack_exports__);
   linkExactActiveClass: 'selected-exact-link',
   routes: [{
     path: '*',
-    component: _pages_NotFound__WEBPACK_IMPORTED_MODULE_9__["default"]
+    component: _pages_NotFound__WEBPACK_IMPORTED_MODULE_8__["default"]
   }, {
     path: '/',
     component: _pages_Logo__WEBPACK_IMPORTED_MODULE_0__["default"]

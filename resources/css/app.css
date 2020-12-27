@@ -7,9 +7,38 @@ a {
 }
 
 .main-title {
-    @apply font-normal text-3xl text-gray-700 leading-none
+    @apply font-normal text-3xl text-gray-700 leading-none;
 }
 
 .selected-exact-link {
-    @apply font-bold
+    @apply font-bold;
+}
+
+.container {
+    max-width: 920px;
+}
+
+.logo {
+    width: 280px;
+    height: 29.7px;
+    background-image: url('/img/logo.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 20px 0;
+    position: absolute;
+}
+
+.splash {
+    height: 50px;
+    width: 50px;
+    background-image: url('/img/splash.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    opacity: .2;
+}
+
+.button {
+    padding-bottom: 100px;
+    @apply border border-gray-200 px-8 py-2 rounded-full text-black font-bold text-xs
 }

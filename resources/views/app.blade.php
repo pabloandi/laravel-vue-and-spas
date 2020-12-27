@@ -11,16 +11,18 @@
     </head>
     <body class="font-sans">
         <div id="app">
-            <div class="container mx-auto bg-gray-200">
-                <header class="py-6 mb-8">
-                    <h1>
-                        <img src="/img/logo.svg" alt="Tailwindcss" height="29.7px" width="157px">
-                    </h1>
-                </header>
+            <header class="p-6 mb-8" style="background: url('/img/splash.svg') 0 0 no-repeat;">
+                <h1>
+                    <img src="/img/logo.svg" alt="Laracasts">
+                </h1>
+
+            </header>
+
+            <div class="container px-8 pb-16">
                 <main class="flex">
-                    <aside class="w-1/6">
-                        <section class="mb-8">
-                            <h5 class="uppercase font-bold mb-3">Brand</h5>
+                    <aside class="md:w-64 pt-8">
+                        <section class="mb-10">
+                            <h5 class="uppercase font-bold mb-5 text-base">Brand</h5>
                             <ul class="list-reset ">
                                 <li class="text-sm leading-loose"><router-link class="text-black" to="/">Logo</router-link></li>
                                 <li class="text-sm leading-loose"><router-link class="text-black" to="/logo-symbol">Logo Symbol</router-link></li>
@@ -29,7 +31,7 @@
                             </ul>
                         </section>
                         <section>
-                            <h5 class="uppercase font-bold mb-3">Doodles</h5>
+                            <h5 class="uppercase font-bold mb-5 text-base">Doodles</h5>
                             <ul class="list-reset">
                                 <li class="text-sm leading-loose"><router-link class="text-black" to="/mascot">Mascot</router-link></li>
                                 <li class="text-sm leading-loose"><router-link class="text-black" to="/illustrations">Illustrations</router-link></li>
@@ -38,7 +40,7 @@
                             </ul>
                         </section>
                     </aside>
-                    <div class="primary bg-red-200 flex-1">
+                    <div class="primary flex-1">
                         <router-view></router-view>
                     </div>
                 </main>

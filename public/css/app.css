@@ -183902,9 +183902,50 @@ a {
   line-height: 2.25rem;
   line-height: 1;
   --tw-text-opacity: 1;
-  color: rgba(55, 65, 81, var(--tw-text-opacity))
+  color: rgba(55, 65, 81, var(--tw-text-opacity));
 }
 
 .selected-exact-link {
-  font-weight: 700
+  font-weight: 700;
+}
+
+.container {
+  max-width: 920px;
+}
+
+.logo {
+  width: 280px;
+  height: 29.7px;
+  background-image: url('/img/logo.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 20px 0;
+  position: absolute;
+}
+
+.splash {
+  height: 50px;
+  width: 50px;
+  background-image: url('/img/splash.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  opacity: .2;
+}
+
+.button {
+  padding-bottom: 100px;
+  --tw-border-opacity: 1;
+  border-color: rgba(229, 231, 235, var(--tw-border-opacity));
+  border-radius: 9999px;
+  border-width: 1px;
+  font-weight: 700;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  --tw-text-opacity: 1;
+  color: rgba(34, 34, 34, var(--tw-text-opacity))
 }
