@@ -6,9 +6,10 @@ import Mascot from './pages/Mascot';
 import Illustrations from './pages/Illustrations';
 import Wallpapers from './pages/Wallpapers';
 import NotFound from './pages/NotFound';
+import SiteStats from './pages/SiteStats';
+import Achievements from './pages/Achievements';
 
-let Loaders = () =>
-    import(/* webpackChunkName: "loaders" */'./pages/Loaders');
+let Loaders = () => import(/* webpackChunkName: "loaders" */'./pages/Loaders');
 
 export default {
     mode: 'history',
@@ -50,6 +51,14 @@ export default {
         {
             path: '/wallpapers',
             component: Wallpapers,
+        },
+        {
+            path: '/site-stats',
+            component: SiteStats,
+        },
+        {
+            path: '/achievements',
+            component: Achievements,
         },
     ]
 }

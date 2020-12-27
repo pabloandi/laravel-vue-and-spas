@@ -14,6 +14,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+use App\Models\User;
+
+Route::get('stats', function () {
+    return [
+        'series' => 200,
+        'lessons' => 1300
+    ];
 });
+
+Route::get('achievements', function () {
+    $user = request()->user();
+    return $user->achievements()->get();
+})->middleware('auth:api');
