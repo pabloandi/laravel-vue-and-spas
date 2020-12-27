@@ -4,9 +4,11 @@ import Colors from './pages/Colors';
 import Typography from './pages/Typography';
 import Mascot from './pages/Mascot';
 import Illustrations from './pages/Illustrations';
-import Loaders from './pages/Loaders';
 import Wallpapers from './pages/Wallpapers';
 import NotFound from './pages/NotFound';
+
+let Loaders = () =>
+    import(/* webpackChunkName: "loaders" */'./pages/Loaders');
 
 export default {
     mode: 'history',
